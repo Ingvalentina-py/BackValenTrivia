@@ -1,1 +1,58 @@
+.# Node.js dependencies
+node_modules/
+
+# Entorno
 .env
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios temporales
+tmp/
+temp/
+*.tmp
+
+# Sistema operativo
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Archivos de prueba
+jest-*.json
+coverage/
+
+# Archivos locales o temporales
+*.local
+*.swp
+*.bak
+
+# PM2 process file
+ecosystem.config.js
+
+# Next.js (si aplica)
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Otros archivos sensibles
+*.pem
+*.key
+*.crt
