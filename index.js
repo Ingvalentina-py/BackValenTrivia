@@ -9,7 +9,10 @@ console.log("API KEY:", process.env.OPENAI_API_KEY);
 dotenv.config();
 const app = express();
 
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://front-valen-trivia.vercel.app/'
+}));
 app.use(express.json());
 app.use("/", triviaRoutes);
 mongoose.connect(process.env.MONGODB_URI)
