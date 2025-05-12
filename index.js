@@ -11,8 +11,11 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://front-valen-trivia.vercel.app/'
+  origin: 'https://front-valen-trivia.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
+
 app.use(express.json());
 app.use("/", triviaRoutes);
 mongoose.connect(process.env.MONGODB_URI)
